@@ -37,3 +37,14 @@ faqs.forEach(e=>{
         }
     })
 })
+
+document.querySelector('.smol').addEventListener('click', e=>{
+    if(document.querySelector('.navbar').style.height == '20rem'){
+        document.querySelector('.navbar').style.height = '6rem'
+        document.querySelector('.yyy').style.display = 'none'
+    }
+    else{
+        document.querySelector('.navbar').style.height = '20rem'
+        document.querySelector('.yyy').style.display = 'flex'
+    }
+})

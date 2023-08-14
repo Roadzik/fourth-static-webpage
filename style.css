@@ -18,21 +18,28 @@ body, html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 22rem;
-    padding-right: 8rem;
+    padding-left: 12rem;
+    padding-right: 4rem;
 }
 .navs{
     width: 60%;
     height: auto;
     display: flex;
     justify-content: center;
-    padding-left: 20rem;
-    
+    margin-left: 10rem;
+}
+.jjj{
+    width: 20%;
+}
+.yyy{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .navs a{
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 1.5rem;
     font-weight: 600;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -45,7 +52,7 @@ body, html{
 .but{
     width: 35%;
     display: flex;
-    margin-right: 14rem;
+    margin-right: 4rem;
 }
 .sign, .join{
     margin-left: 1rem;
@@ -74,7 +81,19 @@ body, html{
     justify-content: space-between;
 }
 
-
+.smol{
+    width: 2rem;
+    height: 1rem;
+    background-color: transparent;
+    border: 0;
+    display: none;
+}
+.smol hr{
+    width: 100%;
+    height: .4rem;
+    padding-bottom: .1rem;
+    background-color: white;
+}
 .first h1, .first h4, .first img, .second h1, .second h4, .second img{
     padding-bottom: 2rem;
 }
@@ -375,6 +394,68 @@ h4{
     }
 }
 */
+
+@media (max-width: 1150px) {
+    .navbar *{
+        padding: 0;
+        margin: 0;
+    }
+    .smol{
+        display: flex;
+        flex-direction: column;
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+    .jjj{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .yyy{
+        width: 100%;
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        align-items: first baseline;
+        flex-direction: column;
+        height: 6rem;
+        margin: 0;
+        padding: 0;
+        padding-top: 1rem;
+        padding-left: 2rem;
+    }
+    .navs{
+        display: flex;
+        align-items: first baseline;
+        flex-direction: column;
+        height: 20rem;
+        margin: 0;
+        padding: 0;
+    }
+    .but{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 2rem 0px 1rem;
+    }
+    .navs a{
+        font-size: 1.7rem;
+    }
+}
+
+
+@media (max-width: 1360px) {
+    .navbar{
+        padding-left: 0;
+    }
+}
 @media (max-width: 1220px) {
     .long{
         width: 100%;
@@ -450,5 +531,14 @@ h4{
         width: 20rem;
         height: 4rem;
         margin-left: 1rem;
+    }
+}
+
+@media (min-width:1151px){
+    .navbar{
+        height: 6rem !important;
+    }
+    .yyy{
+        display: flex !important;
     }
 }
