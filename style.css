@@ -270,6 +270,11 @@ h4{
     position: absolute;
     top: 0;
 }
+.rows{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 .tp h4{
     font-weight: 600;
     font-size: 1.2rem;
@@ -281,6 +286,7 @@ h4{
 }
 .bt{
     display: none;
+    height: auto;
 }
 .bt p{
     font-size: 1.2rem;
@@ -642,5 +648,27 @@ h4{
         width: 30rem;
         margin-right: 30%;
         margin-bottom: -20vh;
+    }
+    .TV h1, .TV h4{
+        display: flex;
+        flex-direction: column;
+    }
+    .firstrow, .secondrow{
+        display: flex;
+        flex-direction: column;
+    }
+    .firstrow a img, .secondrow a img{
+        width: 5rem;
+        font-size: 1rem;
+    }
+    .firstrow a, .secondrow a{
+        width: 70%;
+    }
+    .rows{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
     }
 }

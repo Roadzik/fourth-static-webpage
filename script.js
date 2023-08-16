@@ -29,8 +29,8 @@ faqs.forEach(e=>{
         else{
             e.lastElementChild.style.display = 'block'
             e.lastElementChild.style.width = '100%'
-            e.lastElementChild.style.height = '10rem'
-            e.lastElementChild.style.padding = '2rem 2rem 1rem'
+            e.lastElementChild.style.height = 'auto'
+            e.lastElementChild.style.padding = '4rem 2rem 1rem'
             document.querySelector('.yes').style.height = bah +200 + 'px'
             size = e.style.height = e.lastElementChild.lastElementChild.clientHeight+140+'px'
             last = e.lastElementChild
